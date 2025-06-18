@@ -12,7 +12,6 @@ export default function AccessoiresPage() {
       {/* Navbar */}
       <nav className="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 border-b border-gray-100 relative">
         <div className="flex items-center gap-4 sm:gap-10">
-          <span className="text-lg sm:text-xl font-bold text-gray-900">Maman Benie</span>
           <button className="md:hidden p-2" onClick={() => setMenuOpen(!menuOpen)} aria-label="Open menu">
             <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
