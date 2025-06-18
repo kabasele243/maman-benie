@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function AccessoiresPage() {
@@ -16,10 +17,10 @@ export default function AccessoiresPage() {
             <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
           <ul className={`fixed md:static top-16 left-0 w-full bg-white md:bg-transparent z-20 md:flex gap-8 text-gray-700 font-medium transition-all duration-200 ${menuOpen ? 'block' : 'hidden'} md:block md:w-auto md:top-auto md:left-auto`}>
-            <li className="px-4 py-2 md:p-0"><a href="/" className="hover:text-black block">Home</a></li>
-            <li className="px-4 py-2 md:p-0"><a href="/parfums" className="hover:text-black block">Parfums</a></li>
-            <li className="px-4 py-2 md:p-0"><a href="/cosmetiques" className="hover:text-black block">Cosmétiques</a></li>
-            <li className="px-4 py-2 md:p-0"><a href="/accessoires" className="hover:text-black block text-black font-bold">Accessoires</a></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/" className="hover:text-black block">Home</Link></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/parfums" className="hover:text-black block">Parfums</Link></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/cosmetiques" className="hover:text-black block">Cosmétiques</Link></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/accessoires" className="hover:text-black block text-black font-bold">Accessoires</Link></li>
           </ul>
         </div>
         <div className="flex items-center gap-2 sm:gap-4">

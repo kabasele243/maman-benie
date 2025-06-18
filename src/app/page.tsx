@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -15,10 +16,10 @@ export default function Home() {
             <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
           <ul className={`fixed md:static top-16 left-0 w-full bg-white md:bg-transparent z-20 md:flex gap-8 text-gray-700 font-medium transition-all duration-200 ${menuOpen ? 'block' : 'hidden'} md:block md:w-auto md:top-auto md:left-auto`}>
-            <li className="px-4 py-2 md:p-0"><a href="/" className="hover:text-black block text-black font-bold">Home</a></li>
-            <li className="px-4 py-2 md:p-0"><a href="/parfums" className="hover:text-black block">Parfums</a></li>
-            <li className="px-4 py-2 md:p-0"><a href="/cosmetiques" className="hover:text-black block">Cosmétiques</a></li>
-            <li className="px-4 py-2 md:p-0"><a href="/accessoires" className="hover:text-black block">Accessoires</a></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/" className="hover:text-black block text-black font-bold">Home</Link></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/parfums" className="hover:text-black block">Parfums</Link></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/cosmetiques" className="hover:text-black block">Cosmétiques</Link></li>
+            <li className="px-4 py-2 md:p-0"><Link href="/accessoires" className="hover:text-black block">Accessoires</Link></li>
           </ul>
         </div>
         <div className="flex items-center gap-2 sm:gap-4">
@@ -68,21 +69,21 @@ export default function Home() {
           <Image src="/images/parfume.png" alt="Bag" width={140} height={140} className="mb-4 w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] object-cover" />
           <h2 className="font-semibold text-base sm:text-lg mb-2">Parfum</h2>
           <p className="text-gray-500 text-xs sm:text-sm mb-4 text-center">Parfum pour bébé et enfant.</p>
-          <a href="/parfums" className="px-4 sm:px-6 py-2 bg-black text-white rounded-full font-medium text-xs sm:text-sm hover:bg-gray-900 transition">Voir</a>
+          <Link href="/parfums" className="px-4 sm:px-6 py-2 bg-black text-white rounded-full font-medium text-xs sm:text-sm hover:bg-gray-900 transition">Voir</Link>
         </div>
         {/* Product 2 */}
         <div className="bg-gray-50 rounded-xl p-4 sm:p-6 flex flex-col items-center">
           <Image src="/images/parfume.png" alt="Shoes" width={140} height={140} className="mb-4 w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] object-cover" />
           <h2 className="font-semibold text-base sm:text-lg mb-2">Cosmétique</h2>
           <p className="text-gray-500 text-xs sm:text-sm mb-4 text-center">Cosmétique pour bébé et enfant.</p>
-          <a href="/cosmetiques" className="px-4 sm:px-6 py-2 bg-black text-white rounded-full font-medium text-xs sm:text-sm hover:bg-gray-900 transition">Voir</a>
+          <Link href="/cosmetiques" className="px-4 sm:px-6 py-2 bg-black text-white rounded-full font-medium text-xs sm:text-sm hover:bg-gray-900 transition">Voir</Link>
         </div>
         {/* Product 3 */}
         <div className="bg-gray-50 rounded-xl p-4 sm:p-6 flex flex-col items-center">
           <Image src="/images/parfume.png" alt="Headphones" width={140} height={140} className="mb-4 w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] object-cover" />
           <h2 className="font-semibold text-base sm:text-lg mb-2">Accessoires</h2>
           <p className="text-gray-500 text-xs sm:text-sm mb-4 text-center">Accessoires pour bébé et enfant.</p>
-          <a href="/accessoires" className="px-4 sm:px-6 py-2 bg-black text-white rounded-full font-medium text-xs sm:text-sm hover:bg-gray-900 transition">Voir</a>
+          <Link href="/accessoires" className="px-4 sm:px-6 py-2 bg-black text-white rounded-full font-medium text-xs sm:text-sm hover:bg-gray-900 transition">Voir</Link>
         </div>
       </section>
     </div>
