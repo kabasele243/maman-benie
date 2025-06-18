@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function CosmetiquesPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   
-  const whatsappNumber = "+2438833260597";
+  const whatsappNumber = "+243833260597";
   const whatsappMessage = "Pouvez-vous me donner plus d'informations?";
   
   const handleWhatsAppClick = (productName: string) => {
