@@ -35,8 +35,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-2">Support</h4>
             <ul className="space-y-1">
               <li><a href="#" className="hover:underline">Contact</a></li>
-              <li><a href="#" className="hover:underline">FAQ</a></li>
-              <li><a href="#" className="hover:underline">CGV</a></li>
+              {/* <li><a href="#" className="hover:underline">FAQ</a></li>
+              <li><a href="#" className="hover:underline">CGV</a></li> */}
             </ul>
           </div>
         </div>
