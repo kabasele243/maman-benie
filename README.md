@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chez Maman Benie - E-commerce Platform
 
-## Getting Started
+A modern e-commerce website built with Next.js for selling baby and children's products including perfumes, cosmetics, and accessories.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern UI/UX**: Clean, responsive design with Tailwind CSS
+- **Product Categories**: 
+  - Parfums (Perfumes)
+  - Cosmétiques (Cosmetics) 
+  - Accessoires (Accessories)
+- **Search Functionality**: Product search capabilities
+- **Mobile Responsive**: Optimized for all device sizes
+- **Fast Performance**: Built with Next.js 15 and React 19
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15.3.3
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **React**: v19.0.0
+- **Development**: Turbopack for faster builds
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd client
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── page.tsx          # Home page
+│   ├── layout.tsx        # Root layout
+│   ├── Footer.tsx        # Footer component
+│   ├── globals.css       # Global styles
+│   ├── parfums/          # Perfumes category
+│   ├── cosmetiques/      # Cosmetics category
+│   └── accessoires/      # Accessories category
+public/
+└── images/               # Product images
+```
 
-## Learn More
+## 🚀 Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application uses Tailwind CSS for styling. You can customize the design by modifying:
+- `src/app/globals.css` - Global styles
+- Component-specific Tailwind classes
+- `tailwind.config.js` - Tailwind configuration
 
-## Deploy on Vercel
+## 📱 Responsive Design
+
+The application is fully responsive and optimized for:
+- Mobile devices
+- Tablets
+- Desktop computers
+
+## 🔍 Search & Navigation
+
+- Product search functionality
+- Category-based navigation
+- Mobile-friendly hamburger menu
+
+## 🚀 Deployment
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📄 License
+
+This project is private and proprietary.
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
